@@ -8,8 +8,7 @@ function App() {
       name: 'Draakiiii Store',
       description: 'Tienda de figuras de resina',
       url: 'https://draakiiii.com',
-      icon: Store,
-      isMain: true
+      icon: Store
     },
     {
       id: 'books',
@@ -61,38 +60,12 @@ function App() {
             <Star className="logo-icon" />
           </div>
           <h1 className="title">Draakiiii HUB</h1>
-          <p className="subtitle">
-            Centro de control para acceder a todas las aplicaciones
-          </p>
         </header>
 
-        {/* Main App - Featured */}
+        {/* Apps Grid */}
         <section className="section">
-          <h2 className="section-title">Aplicación Principal</h2>
-          <div className="text-center">
-            {apps.filter(app => app.isMain).map((app) => (
-              <div
-                key={app.id}
-                onClick={() => handleAppClick(app.url)}
-                className="main-app-card fade-in-up"
-              >
-                <div className="card-content">
-                  <div className="card-icon">
-                    <app.icon />
-                  </div>
-                  <h3 className="card-title">{app.name}</h3>
-                  <p className="card-description">{app.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Other Apps Grid */}
-        <section className="section">
-          <h2 className="section-title">Otras Aplicaciones</h2>
           <div className="apps-grid">
-            {apps.filter(app => !app.isMain).map((app, index) => (
+            {apps.map((app, index) => (
               <div
                 key={app.id}
                 onClick={() => handleAppClick(app.url)}

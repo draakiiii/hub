@@ -1,21 +1,18 @@
 # Draakiiii HUB
 
-Un centro de control minimalista para acceder a todas las aplicaciones de Draakiiii desde un solo lugar.
+Un centro de control ultra minimalista para acceder a todas las aplicaciones de Draakiiii.
 
 ## 🚀 Características
 
-- **Diseño Minimalista**: Interfaz limpia y simple con enfoque en la funcionalidad
+- **Diseño Ultra Minimalista**: Solo iconos, títulos y descripciones
 - **Acceso Centralizado**: Todas las aplicaciones en un solo lugar
 - **Navegación Intuitiva**: Clic en cualquier aplicación para abrirla en nueva pestaña
-- **Diseño Limpio**: Sin distracciones visuales, solo lo esencial
+- **Interfaz Limpia**: Sin secciones ni texto descriptivo innecesario
 - **Responsive**: Funciona perfectamente en desktop, tablet y móvil
 
-## 📱 Aplicaciones Incluidas
+## 📱 Aplicaciones
 
-### Aplicación Principal
 - **Draakiiii Store** (`draakiiii.com`) - Tienda de figuras de resina
-
-### Otras Aplicaciones
 - **Books** (`books.draakiiii.com`) - Gestión de librería con sistema de puntos
 - **Gestión** (`gestion.draakiiii.com`) - Gestión de pedidos de figuras
 - **Remigio** (`remigio.draakiiii.com`) - Calculadora de puntos para baraja española
@@ -55,7 +52,7 @@ El proyecto está configurado para desplegarse automáticamente en Vercel. Cada 
 - **Tipografía**: Sistema de fuentes moderno y legible
 - **Efectos**: Animaciones sutiles y transiciones suaves
 - **Responsive**: Diseño adaptativo para todos los dispositivos
-- **Minimalista**: Solo iconos, títulos y descripciones esenciales
+- **Ultra Minimalista**: Solo lo esencial, sin distracciones
 
 ## 📄 Licencia
 
