@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
-import { ExternalLink, Store, BookOpen, Settings, Heart, List, Film, Star, ArrowRight } from 'lucide-react'
+import React from 'react'
+import { Store, BookOpen, Settings, Heart, List, Film, Star } from 'lucide-react'
 
 function App() {
-  const [hoveredApp, setHoveredApp] = useState(null)
-
   const apps = [
     {
       id: 'store',
@@ -11,7 +9,6 @@ function App() {
       description: 'Tienda de figuras de resina',
       url: 'https://draakiiii.com',
       icon: Store,
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       isMain: true
     },
     {
@@ -19,40 +16,35 @@ function App() {
       name: 'Books',
       description: 'Gestión de librería con sistema de puntos',
       url: 'https://books.draakiiii.com',
-      icon: BookOpen,
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+      icon: BookOpen
     },
     {
       id: 'gestion',
       name: 'Gestión',
       description: 'Gestión de pedidos de figuras',
       url: 'https://gestion.draakiiii.com',
-      icon: Settings,
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+      icon: Settings
     },
     {
       id: 'remigio',
       name: 'Remigio',
       description: 'Calculadora de puntos para baraja española',
       url: 'https://remigio.draakiiii.com',
-      icon: Heart,
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+      icon: Heart
     },
     {
       id: 'list',
       name: 'List',
       description: 'Gestión de listas con categorías',
       url: 'https://list.draakiiii.com',
-      icon: List,
-      gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'
+      icon: List
     },
     {
       id: 'movies',
       name: 'Movies',
       description: 'Watchlists de Letterboxd y selección de películas',
       url: 'https://movies.draakiiii.com',
-      icon: Film,
-      gradient: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)'
+      icon: Film
     }
   ]
 
@@ -70,7 +62,7 @@ function App() {
           </div>
           <h1 className="title">Draakiiii HUB</h1>
           <p className="subtitle">
-            Un centro de control moderno para acceder a todas las aplicaciones de Draakiiii desde un solo lugar
+            Centro de control para acceder a todas las aplicaciones
           </p>
         </header>
 
@@ -82,23 +74,14 @@ function App() {
               <div
                 key={app.id}
                 onClick={() => handleAppClick(app.url)}
-                onMouseEnter={() => setHoveredApp(app.id)}
-                onMouseLeave={() => setHoveredApp(null)}
                 className="main-app-card fade-in-up"
               >
                 <div className="card-content">
-                  <div 
-                    className="card-icon"
-                    style={{ background: app.gradient }}
-                  >
+                  <div className="card-icon">
                     <app.icon />
                   </div>
                   <h3 className="card-title">{app.name}</h3>
                   <p className="card-description">{app.description}</p>
-                  <div className="card-action">
-                    <span>Acceder</span>
-                    <ArrowRight size={16} />
-                  </div>
                 </div>
               </div>
             ))}
@@ -113,24 +96,15 @@ function App() {
               <div
                 key={app.id}
                 onClick={() => handleAppClick(app.url)}
-                onMouseEnter={() => setHoveredApp(app.id)}
-                onMouseLeave={() => setHoveredApp(null)}
                 className="app-card fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="card-content">
-                  <div 
-                    className="card-icon"
-                    style={{ background: app.gradient }}
-                  >
+                  <div className="card-icon">
                     <app.icon />
                   </div>
                   <h3 className="card-title">{app.name}</h3>
                   <p className="card-description">{app.description}</p>
-                  <div className="card-action">
-                    <span>Abrir</span>
-                    <ExternalLink size={14} />
-                  </div>
                 </div>
               </div>
             ))}
@@ -140,7 +114,7 @@ function App() {
         {/* Footer */}
         <footer className="footer">
           <p className="footer-text">
-            © 2024 Draakiiii HUB - Centro de control de aplicaciones
+            © 2024 Draakiiii HUB
           </p>
         </footer>
       </div>

@@ -1,13 +1,13 @@
 # Draakiiii HUB
 
-Un centro de control moderno para acceder a todas las aplicaciones de Draakiiii desde un solo lugar.
+Un centro de control minimalista para acceder a todas las aplicaciones de Draakiiii desde un solo lugar.
 
 ## 🚀 Características
 
-- **Diseño Moderno**: Interfaz limpia y responsive con Tailwind CSS
+- **Diseño Minimalista**: Interfaz limpia y simple con enfoque en la funcionalidad
 - **Acceso Centralizado**: Todas las aplicaciones en un solo lugar
 - **Navegación Intuitiva**: Clic en cualquier aplicación para abrirla en nueva pestaña
-- **Efectos Visuales**: Animaciones suaves y efectos hover
+- **Diseño Limpio**: Sin distracciones visuales, solo lo esencial
 - **Responsive**: Funciona perfectamente en desktop, tablet y móvil
 
 ## 📱 Aplicaciones Incluidas
@@ -26,9 +26,8 @@ Un centro de control moderno para acceder a todas las aplicaciones de Draakiiii 
 
 - **React 19** - Framework de interfaz de usuario
 - **Vite** - Herramienta de build rápida
-- **Tailwind CSS 4** - Framework de CSS utility-first
-- **Lucide React** - Iconos modernos
-- **PostCSS** - Procesamiento de CSS
+- **CSS Puro** - Estilos minimalistas y limpios
+- **Lucide React** - Iconos modernos y simples
 
 ## 🚀 Instalación y Desarrollo
 
@@ -52,11 +51,12 @@ El proyecto está configurado para desplegarse automáticamente en Vercel. Cada 
 
 ## 🎨 Diseño
 
-- **Paleta de colores**: Gradientes púrpura y rosa con fondo oscuro
+- **Paleta de colores**: Grises neutros y blancos para un look limpio
 - **Tipografía**: Sistema de fuentes moderno y legible
-- **Efectos**: Glassmorphism, sombras y animaciones suaves
+- **Efectos**: Animaciones sutiles y transiciones suaves
 - **Responsive**: Diseño adaptativo para todos los dispositivos
+- **Minimalista**: Solo iconos, títulos y descripciones esenciales
 
 ## 📄 Licencia
 
-© 2024 Draakiiii HUB - Centro de control de aplicaciones
+© 2024 Draakiiii HUB
