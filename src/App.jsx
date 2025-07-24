@@ -75,13 +75,6 @@ function App() {
             ))}
           </div>
         </section>
-
-        {/* Footer */}
-        <footer className="footer">
-          <p className="footer-text">
-            © 2024 Draakiiii HUB
-          </p>
-        </footer>
       </div>
     </div>
   )

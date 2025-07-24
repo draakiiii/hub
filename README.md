@@ -4,7 +4,7 @@ Un centro de control ultra minimalista para acceder a todas las aplicaciones de 
 
 ## 🚀 Características
 
-- **Diseño Ultra Minimalista**: Solo las aplicaciones, sin título ni iconos decorativos
+- **Diseño Ultra Minimalista**: Solo las aplicaciones, sin elementos decorativos
 - **Acceso Centralizado**: Todas las aplicaciones en un solo lugar
 - **Navegación Intuitiva**: Clic en cualquier aplicación para abrirla en nueva pestaña
 - **Interfaz Limpia**: Solo iconos, títulos y descripciones de las apps
@@ -53,7 +53,3 @@ El proyecto está configurado para desplegarse automáticamente en Vercel. Cada 
 - **Efectos**: Animaciones sutiles y transiciones suaves
 - **Responsive**: Diseño adaptativo para todos los dispositivos
 - **Ultra Minimalista**: Solo las aplicaciones, sin elementos decorativos
-
-## 📄 Licencia
-
-© 2024 Draakiiii HUB
