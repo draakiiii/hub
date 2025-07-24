@@ -4,10 +4,10 @@ Un centro de control ultra minimalista para acceder a todas las aplicaciones de 
 
 ## 🚀 Características
 
-- **Diseño Ultra Minimalista**: Solo iconos, títulos y descripciones
+- **Diseño Ultra Minimalista**: Solo las aplicaciones, sin título ni iconos decorativos
 - **Acceso Centralizado**: Todas las aplicaciones en un solo lugar
 - **Navegación Intuitiva**: Clic en cualquier aplicación para abrirla en nueva pestaña
-- **Interfaz Limpia**: Sin secciones ni texto descriptivo innecesario
+- **Interfaz Limpia**: Solo iconos, títulos y descripciones de las apps
 - **Responsive**: Funciona perfectamente en desktop, tablet y móvil
 
 ## 📱 Aplicaciones
@@ -52,7 +52,7 @@ El proyecto está configurado para desplegarse automáticamente en Vercel. Cada 
 - **Tipografía**: Sistema de fuentes moderno y legible
 - **Efectos**: Animaciones sutiles y transiciones suaves
 - **Responsive**: Diseño adaptativo para todos los dispositivos
-- **Ultra Minimalista**: Solo lo esencial, sin distracciones
+- **Ultra Minimalista**: Solo las aplicaciones, sin elementos decorativos
 
 ## 📄 Licencia
 

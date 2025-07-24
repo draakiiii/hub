@@ -1,5 +1,5 @@
 import React from 'react'
-import { Store, BookOpen, Settings, Heart, List, Film, Star } from 'lucide-react'
+import { Store, BookOpen, Settings, Heart, List, Film } from 'lucide-react'
 
 function App() {
   const apps = [
@@ -54,14 +54,6 @@ function App() {
   return (
     <div className="app-container">
       <div className="container">
-        {/* Header */}
-        <header className="header fade-in-up">
-          <div className="logo-container">
-            <Star className="logo-icon" />
-          </div>
-          <h1 className="title">Draakiiii HUB</h1>
-        </header>
-
         {/* Apps Grid */}
         <section className="section">
           <div className="apps-grid">
