@@ -19,7 +19,7 @@ Un centro de control moderno para acceder a todas las aplicaciones de Draakiiii 
 - **Books** (`books.draakiiii.com`) - Gestión de librería con sistema de puntos
 - **Gestión** (`gestion.draakiiii.com`) - Gestión de pedidos de figuras
 - **Remigio** (`remigio.draakiiii.com`) - Calculadora de puntos para baraja española
-- **Lists** (`lists.draakiiii.com`) - Gestión de listas con categorías
+- **List** (`list.draakiiii.com`) - Gestión de listas con categorías
 - **Movies** (`movies.draakiiii.com`) - Watchlists de Letterboxd y selección de películas
 
 ## 🛠️ Tecnologías

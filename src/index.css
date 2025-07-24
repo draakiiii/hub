@@ -1,20 +1,288 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Comprehensive CSS styles for Draakiiii HUB */
 
-/* Custom styles */
-body {
+/* Reset and base styles */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  color: white;
+  line-height: 1.6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Main container styles */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.logo-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #a0aec0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section styles */
+.section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* App card styles */
+.app-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.app-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon svg {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.card-description {
+  color: #a0aec0;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+  color: #f093fb;
+  font-weight: 500;
+}
+
+.card-action svg {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card-action:hover svg {
+  transform: translateX(4px);
+}
+
+/* Main app card (larger) */
+.main-app-card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.main-app-card .card-content {
+  padding: 2.5rem;
+}
+
+.main-app-card .card-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.main-app-card .card-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.main-app-card .card-title {
+  font-size: 2rem;
+}
+
+/* Grid layout */
+.apps-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 4rem;
+}
+
+.footer-text {
+  color: #a0aec0;
+  font-size: 0.875rem;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1rem 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .app-card .card-content {
+    padding: 1.5rem;
+  }
+  
+  .main-app-card .card-content {
+    padding: 2rem;
+  }
+  
+  .apps-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Smooth scrolling */
