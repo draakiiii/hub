@@ -75,6 +75,12 @@ function App() {
   return (
     <div className="app-container">
       <div className="container">
+        {/* Header */}
+        <header className="header">
+          <h1 className="header-title">Draakiiii HUB</h1>
+          <p className="header-subtitle">Tu centro de aplicaciones y herramientas</p>
+        </header>
+
         {/* Apps Grid */}
         <section className="section">
           <div className="apps-grid">
