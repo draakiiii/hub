@@ -102,6 +102,21 @@ function App() {
             ))}
           </div>
         </section>
+
+        {/* Footer */}
+        <footer className="footer">
+          <p className="footer-text">
+            Creado por{' '}
+            <a
+              href="https://twitter.com/draakiiii"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              @draakiiii
+            </a>
+          </p>
+        </footer>
       </div>
     </div>
   )
