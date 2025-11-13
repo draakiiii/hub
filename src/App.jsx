@@ -1,5 +1,5 @@
 import React from 'react'
-import { Store, BookOpen, Settings, Heart, List, Film } from 'lucide-react'
+import { Store, BookOpen, Settings, Heart, List, Film, DollarSign, Users, Scissors } from 'lucide-react'
 
 function App() {
   const apps = [
@@ -44,6 +44,27 @@ function App() {
       description: 'Watchlists de Letterboxd y selección de películas',
       url: 'https://movies.draakiiii.com',
       icon: Film
+    },
+    {
+      id: 'money',
+      name: 'Money',
+      description: 'Gestión de dinero',
+      url: 'https://money.draakiiii.com',
+      icon: DollarSign
+    },
+    {
+      id: 'lectura',
+      name: 'Lectura',
+      description: 'Lecturas conjuntas en grupo',
+      url: 'https://lectura.draakiiii.com',
+      icon: Users
+    },
+    {
+      id: 'peluqueria',
+      name: 'Peluquería',
+      description: 'Aplicación IA para probar estilos de peinado',
+      url: 'https://peluqueria.draakiiii.com',
+      icon: Scissors
     }
   ]
 
