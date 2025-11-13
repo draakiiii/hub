@@ -1,7 +1,32 @@
-import React from 'react'
-import { Store, BookOpen, Settings, Heart, List, Film, DollarSign, Users, Scissors } from 'lucide-react'
+import React, { useState, useEffect } from 'react'
+import { Store, BookOpen, Settings, Heart, List, Film, DollarSign, Users, Scissors, Moon, Sun } from 'lucide-react'
 
 function App() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme')
+    return savedTheme || 'dark'
+  })
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20
+      const y = (e.clientY / window.innerHeight - 0.5) * 20
+      setMousePosition({ x, y })
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark')
+  }
   const apps = [
     {
       id: 'store',
@@ -50,21 +75,24 @@ function App() {
       name: 'Money',
       description: 'Gestión de dinero',
       url: 'https://money.draakiiii.com',
-      icon: DollarSign
+      icon: DollarSign,
+      isNew: true
     },
     {
       id: 'lectura',
       name: 'Lectura',
       description: 'Lecturas conjuntas en grupo',
       url: 'https://lectura.draakiiii.com',
-      icon: Users
+      icon: Users,
+      isNew: true
     },
     {
       id: 'peluqueria',
       name: 'Peluquería',
       description: 'Aplicación IA para probar estilos de peinado',
       url: 'https://peluqueria.draakiiii.com',
-      icon: Scissors
+      icon: Scissors,
+      isNew: true
     }
   ]
 
@@ -74,6 +102,22 @@ function App() {
 
   return (
     <div className="app-container">
+      <div
+        className="parallax-bg"
+        style={{
+          transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`
+        }}
+      />
+
+      {/* Theme Toggle Button */}
+      <button
+        className="theme-toggle"
+        onClick={toggleTheme}
+        aria-label="Toggle theme"
+      >
+        {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+      </button>
+
       <div className="container">
         {/* Header */}
         <header className="header">
@@ -91,6 +135,9 @@ function App() {
                 className="app-card fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
+                {app.isNew && (
+                  <div className="new-badge">Nuevo</div>
+                )}
                 <div className="card-content">
                   <div className="card-icon">
                     <app.icon />
