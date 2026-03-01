@@ -885,7 +885,7 @@ a.nav-item:visited {
 }
 
 .app-wip {
-  cursor: not-allowed !important;
+  cursor: pointer;
 }
 
 .app-wip:hover {

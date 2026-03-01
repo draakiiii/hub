@@ -94,7 +94,7 @@ function App() {
   ]
 
   const handleAppClick = (app) => {
-    if (app.isDisabled || app.isWip) return
+    if (app.isDisabled) return
     window.open(app.url, '_blank', 'noopener,noreferrer')
   }
 
