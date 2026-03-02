@@ -36,7 +36,7 @@ function App() {
     {
       id: 'gestion',
       name: '⚙️ Gestión',
-      description: 'Gestión de pedidos de figuras - SUPER RÁPIDO',
+      description: 'Gestión de pedidos de figuras',
       url: 'https://gestion.draakiiii.com',
       color: '#FF0000',
       bgColor: '#CCCCFF',
@@ -90,7 +90,25 @@ function App() {
       color: '#CC0066',
       bgColor: '#E0CCFF',
       isDisabled: true
-    }
+    },
+    {
+      id: 'shopping',
+      name: '🧾 Shopping',
+      description: 'Sube tus tickets de la compra y analiza tus hábitos 🛍️📊',
+      url: 'https://shopping.draakiiii.com',
+      color: '#FF1493',
+      bgColor: '#FFF0F5',
+      isNew: true
+    },
+    {
+      id: 'discotet',
+      name: '🎧 Discotet',
+      description: 'Escucha música con amigos, haz reviews y consulta estadísticas 🎶📈',
+      url: 'https://discotet.draakiiii.com',
+      color: '#1E90FF',
+      bgColor: '#E6F2FF',
+      isNew: true
+    },
   ]
 
   const handleAppClick = (app) => {
